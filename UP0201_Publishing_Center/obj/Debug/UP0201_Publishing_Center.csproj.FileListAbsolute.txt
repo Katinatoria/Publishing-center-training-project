@@ -1,0 +1,13 @@
+C:\Users\xovxc\source\repos\UP0201_Publishing_Center\UP0201_Publishing_Center\obj\Debug\UP0201_Publishing_Center.csproj.AssemblyReference.cache
+C:\Users\xovxc\source\repos\UP0201_Publishing_Center\UP0201_Publishing_Center\obj\Debug\UP0201_Publishing_Center.Properties.Resources.resources
+C:\Users\xovxc\source\repos\UP0201_Publishing_Center\UP0201_Publishing_Center\obj\Debug\UP0201_Publishing_Center.csproj.GenerateResource.cache
+C:\Users\xovxc\source\repos\UP0201_Publishing_Center\UP0201_Publishing_Center\obj\Debug\UP0201_Publishing_Center.csproj.CoreCompileInputs.cache
+C:\Users\xovxc\source\repos\UP0201_Publishing_Center\UP0201_Publishing_Center\bin\Debug\UP0201_Publishing_Center.exe
+C:\Users\xovxc\source\repos\UP0201_Publishing_Center\UP0201_Publishing_Center\bin\Debug\UP0201_Publishing_Center.pdb
+C:\Users\xovxc\source\repos\UP0201_Publishing_Center\UP0201_Publishing_Center\obj\Debug\UP0201_Publishing_Center.exe
+C:\Users\xovxc\source\repos\UP0201_Publishing_Center\UP0201_Publishing_Center\obj\Debug\UP0201_Publishing_Center.pdb
+C:\Users\xovxc\source\repos\UP0201_Publishing_Center\UP0201_Publishing_Center\bin\Debug\UP0201_Publishing_Center.exe.config
+C:\Users\xovxc\source\repos\UP0201_Publishing_Center\UP0201_Publishing_Center\obj\Debug\UP0201_Publishing_Center.manager.resources
+C:\Users\xovxc\source\repos\UP0201_Publishing_Center\UP0201_Publishing_Center\obj\Debug\UP0201_Publishing_Center.administrator_update_books_authors.resources
+C:\Users\xovxc\source\repos\UP0201_Publishing_Center\UP0201_Publishing_Center\obj\Debug\UP0201_Publishing_Center.authorization.resources
+C:\Users\xovxc\source\repos\UP0201_Publishing_Center\UP0201_Publishing_Center\obj\Debug\UP0201_Publishing_Center.administrator.resources

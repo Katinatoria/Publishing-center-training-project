@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1700E9B7-7210-46DE-949C-3A842367AFF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UP0201_Publishing_Center</RootNamespace>
+    <AssemblyName>UP0201_Publishing_Center</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="administrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrator.Designer.cs">
+      <DependentUpon>administrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="authorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="authorization.Designer.cs">
+      <DependentUpon>authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manager.Designer.cs">
+      <DependentUpon>manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="administrator_update_books_authors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrator_update_books_authors.Designer.cs">
+      <DependentUpon>administrator_update_books_authors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Издательский_центрDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Издательский_центрDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Издательский_центрDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Издательский_центрDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Издательский_центрDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Издательский_центрDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Издательский_центрDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Издательский_центрDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Издательский_центрDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Издательский_центрDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Издательский_центрDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Издательский_центрDataSet5.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="administrator.resx">
+      <DependentUpon>administrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="authorization.resx">
+      <DependentUpon>authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager.resx">
+      <DependentUpon>manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="administrator_update_books_authors.resx">
+      <DependentUpon>administrator_update_books_authors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Издательский_центрDataSet.xsc">
+      <DependentUpon>Издательский_центрDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Издательский_центрDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Издательский_центрDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Издательский_центрDataSet.xss">
+      <DependentUpon>Издательский_центрDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Издательский_центрDataSet1.xsc">
+      <DependentUpon>Издательский_центрDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Издательский_центрDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Издательский_центрDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Издательский_центрDataSet1.xss">
+      <DependentUpon>Издательский_центрDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Издательский_центрDataSet2.xsc">
+      <DependentUpon>Издательский_центрDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Издательский_центрDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Издательский_центрDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Издательский_центрDataSet2.xss">
+      <DependentUpon>Издательский_центрDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Издательский_центрDataSet3.xsc">
+      <DependentUpon>Издательский_центрDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Издательский_центрDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Издательский_центрDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Издательский_центрDataSet3.xss">
+      <DependentUpon>Издательский_центрDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Издательский_центрDataSet4.xsc">
+      <DependentUpon>Издательский_центрDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Издательский_центрDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Издательский_центрDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Издательский_центрDataSet4.xss">
+      <DependentUpon>Издательский_центрDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Издательский_центрDataSet5.xsc">
+      <DependentUpon>Издательский_центрDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Издательский_центрDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Издательский_центрDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Издательский_центрDataSet5.xss">
+      <DependentUpon>Издательский_центрDataSet5.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Издательский_центрDataSet3" targetNamespace="http://tempuri.org/Издательский_центрDataSet3.xsd" xmlns:mstns="http://tempuri.org/Издательский_центрDataSet3.xsd" xmlns="http://tempuri.org/Издательский_центрDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Издательский_центрConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Издательский_центрConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.UP0201_Publishing_Center.Properties.Settings.GlobalReference.Default.Издательский_центрConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ПисателиTableAdapter" GeneratorDataComponentClassName="ПисателиTableAdapter" Name="Писатели" UserDataComponentName="ПисателиTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Издательский_центрConnectionString (Settings)" DbObjectName="Издательский_центр.dbo.Писатели" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ФИО FROM dbo.Писатели</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ФИО" DataSetColumn="ФИО" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Издательский_центрDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="Издательский_центрDataSet3" msprop:Generator_DataSetName="Издательский_центрDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Писатели" msprop:Generator_RowEvHandlerName="ПисателиRowChangeEventHandler" msprop:Generator_RowDeletedName="ПисателиRowDeleted" msprop:Generator_RowDeletingName="ПисателиRowDeleting" msprop:Generator_RowEvArgName="ПисателиRowChangeEvent" msprop:Generator_TablePropName="Писатели" msprop:Generator_RowChangedName="ПисателиRowChanged" msprop:Generator_RowChangingName="ПисателиRowChanging" msprop:Generator_TableClassName="ПисателиDataTable" msprop:Generator_RowClassName="ПисателиRow" msprop:Generator_TableVarName="tableПисатели" msprop:Generator_UserTableName="Писатели">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ФИО" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_ColumnVarNameInTable="columnФИО" msprop:Generator_UserColumnName="ФИО" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
